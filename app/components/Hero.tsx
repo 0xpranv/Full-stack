@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="flex flex-col space-y-4">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-              A commitment to become the best version of yourself !
+              A commitment to become the best version of yourself!
             </h1>
             <p className="text-gray-500 md:text-xl dark:text-gray-400">Are you ready to take action now ?</p>
           </div>
@@ -21,7 +21,7 @@ export default function Hero() {
           </div>
         </div>
         <div
-          className="bg-slate-200 mx-auto aspect-square overflow-hidden rounded-xl object-cover lg:order-first w-full h-5/6"
+          className="bg-slate-200 mx-auto aspect-square overflow-hidden rounded-xl object-cover lg:order-first w-full h-[60%]"
         />
       </div>
     </section>
