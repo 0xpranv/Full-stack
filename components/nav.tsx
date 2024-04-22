@@ -4,20 +4,20 @@ import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 
 export default function Navbar() {
   return (
-    <header key="1" className="w-full bg-white shadow-sm dark:bg-gray-950">
+    <header className="w-full bg-white shadow-sm dark:bg-gray-950">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-        <Link className="flex items-center gap-2" href="#">
+        <Link className="flex items-center gap-2" href="/">
           <MountainIcon className="h-6 w-6" />
           {/* <span className="text-lg font-semibold">Acme University</span> */}
         </Link>
         <div className="hidden lg:flex items-center space-x-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/universities">
             Explore Universities
           </Link>
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
             Blogs
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/ask-our-experts">
             Ask our Experts
           </Link>
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
@@ -38,7 +38,7 @@ export default function Navbar() {
             <div className="mt-7 grid gap-4">
               <Link
                 className="flex items-center justify-between text-sm font-medium hover:underline underline-offset-4"
-                href="#"
+                href="/universities"
               >
                 Explore Universities
                 <ChevronRightIcon className="h-4 w-4" />
@@ -52,7 +52,7 @@ export default function Navbar() {
               </Link>
               <Link
                 className="flex items-center justify-between text-sm font-medium hover:underline underline-offset-4"
-                href="#"
+                href="/ask-our-experts"
               >
                 Ask our Experts
                 <ChevronRightIcon className="h-4 w-4" />
