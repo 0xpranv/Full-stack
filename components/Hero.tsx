@@ -21,7 +21,7 @@ export default function Hero() {
           </div>
         </div>
         <div
-          className="bg-slate-200 mx-auto aspect-square overflow-hidden rounded-xl object-cover lg:order-first w-full"
+          className="bg-slate-200 mx-auto overflow-hidden rounded-xl object-cover lg:order-first w-full"
         />
       </div>
     </section>
