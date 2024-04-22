@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div key="1" className="flex flex-col pt-12 md:pt-16 lg:pt-18">
+    <div className="flex flex-col pt-12 md:pt-16 lg:pt-18">
       <footer className="w-full"> 
         <div className="aspect-[4/1] relative">
           <iframe 
