@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
+import { SignOutButton, SignedIn, SignedOut } from "@clerk/nextjs";
 
 export default function Navbar() {
   return (
@@ -11,21 +12,44 @@ export default function Navbar() {
           {/* <span className="text-lg font-semibold">Acme University</span> */}
         </Link>
         <div className="hidden lg:flex items-center space-x-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/universities">
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="/universities"
+          >
             Explore Universities
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="#"
+          >
             Blogs
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/ask-our-experts">
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="/ask-our-experts"
+          >
             Ask our Experts
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+          <Link
+            className="text-sm font-medium hover:underline underline-offset-4"
+            href="#"
+          >
             About
           </Link>
-          <Button size="sm" variant="outline">
-            Sign In
-          </Button>
+          <SignedOut>
+            <Link href={"/sign-in"}>
+              <Button size="sm" variant="outline">
+                Sign In
+              </Button>
+            </Link>
+          </SignedOut>
+          <SignedIn>
+            <SignOutButton>
+              <Button size="sm" className="bg-red-200" variant="outline">
+                Sign Out
+              </Button>
+            </SignOutButton>
+          </SignedIn>
         </div>
         <Sheet>
           <SheetTrigger asChild>
@@ -64,15 +88,30 @@ export default function Navbar() {
                 About
                 <ChevronRightIcon className="h-4 w-4" />
               </Link>
-              <Button size="sm" variant="outline">
-                Sign In
-              </Button>
+              <SignedOut>
+                <Link href={"/sign-in"}>
+                  <Button size="sm" variant="outline">
+                    Sign In
+                  </Button>
+                </Link>
+              </SignedOut>
+              <SignedIn>
+                <SignOutButton>
+                  <Button
+                    size="sm"
+                    className="bg-red-200 w-full"
+                    variant="outline"
+                  >
+                    Sign Out
+                  </Button>
+                </SignOutButton>
+              </SignedIn>
             </div>
           </SheetContent>
         </Sheet>
       </div>
     </header>
-  )
+  );
 }
 
 function ChevronRightIcon(props: any) {

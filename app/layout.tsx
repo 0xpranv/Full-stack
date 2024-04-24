@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/nav";
 import { Footer } from "@/components/footer";
 
+import { ClerkProvider } from "@clerk/nextjs";
+
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -29,9 +31,11 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <ClerkProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ClerkProvider>
       </body>
     </html>
   );
