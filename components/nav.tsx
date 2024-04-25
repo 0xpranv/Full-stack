@@ -20,7 +20,7 @@ export default function Navbar() {
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="/blog"
           >
             Blogs
           </Link>
@@ -32,7 +32,7 @@ export default function Navbar() {
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="/about"
           >
             About
           </Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
               </Link>
               <Link
                 className="flex items-center justify-between text-sm font-medium hover:underline underline-offset-4"
-                href="#"
+                href="/blog"
               >
                 Blogs
                 <ChevronRightIcon className="h-4 w-4" />
@@ -83,7 +83,7 @@ export default function Navbar() {
               </Link>
               <Link
                 className="flex items-center justify-between text-sm font-medium hover:underline underline-offset-4"
-                href="#"
+                href="/about"
               >
                 About
                 <ChevronRightIcon className="h-4 w-4" />
