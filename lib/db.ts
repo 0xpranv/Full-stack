@@ -9,6 +9,7 @@ export async function connect() {
     console.log(res);
     // ... you can now use Prisma Client
   } catch (e) {
+    console.log("problem connecting with db");
     throw e;
   } finally {
     async () => {
