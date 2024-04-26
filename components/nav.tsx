@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import { SignOutButton, SignedIn, SignedOut } from "@clerk/nextjs";
+import AvatarDropdown from "./avatarDropdown";
 
 export default function Navbar() {
   return (
@@ -44,11 +45,10 @@ export default function Navbar() {
             </Link>
           </SignedOut>
           <SignedIn>
-            <SignOutButton>
-              <Button size="sm" className="bg-red-200" variant="outline">
-                Sign Out
-              </Button>
-            </SignOutButton>
+            <AvatarDropdown />
+            {/* <SignOutButton>
+              
+            </SignOutButton> */}
           </SignedIn>
         </div>
         <Sheet>
@@ -96,6 +96,7 @@ export default function Navbar() {
                 </Link>
               </SignedOut>
               <SignedIn>
+                {/* <AvatarDropdown /> */}
                 <SignOutButton>
                   <Button
                     size="sm"
