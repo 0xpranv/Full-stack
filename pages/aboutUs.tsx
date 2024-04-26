@@ -54,40 +54,20 @@ export default function AboutUs() {
                 "Rahul is the visionary behind Helpstudyabroad's, leading the company to new heights with his strategic expertise and innovative mindset."
               }
             />
-            <Card>
-              <CardContent className="flex flex-col items-center text-center space-y-2">
-                <Avatar className="mb-4 w-24 h-24">
-                  <AvatarImage src="/placeholder-avatar.svg" />
-                  <AvatarFallback>JA</AvatarFallback>
-                </Avatar>
-                <h3 className="text-xl font-semibold">Jane Appleseed</h3>
-                <p className="text-gray-500 dark:text-gray-400">
-                  Chief Technology Officer
-                </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Jane is the driving force behind Acme&Prime;s cutting-edge
-                  technology, ensuring our solutions are at the forefront of
-                  innovation.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="flex flex-col items-center text-center space-y-2">
-                <Avatar className="mb-4 w-24 h-24">
-                  <AvatarImage src="/placeholder-avatar.svg" />
-                  <AvatarFallback>SM</AvatarFallback>
-                </Avatar>
-                <h3 className="text-xl font-semibold">Sarah Musk</h3>
-                <p className="text-gray-500 dark:text-gray-400">
-                  Chief Operating Officer
-                </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Sarah is the backbone of Acme, ensuring our operations run
-                  smoothly and efficiently to deliver the best possible
-                  experience for our customers.
-                </p>
-              </CardContent>
-            </Card>
+            <TeamCard
+              name={"Rahul Kumar"}
+              position={"CTO"}
+              intro={
+                "Rahul is the visionary behind Helpstudyabroad's, leading the company to new heights with his strategic expertise and innovative mindset."
+              }
+            />
+            <TeamCard
+              name={"Rahul Kumar"}
+              position={"COO"}
+              intro={
+                "Rahul is the visionary behind Helpstudyabroad's, leading the company to new heights with his strategic expertise and innovative mindset."
+              }
+            />
           </div>
         </div>
       </section>
