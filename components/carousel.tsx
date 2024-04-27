@@ -17,7 +17,7 @@ export const TestimonialsCarousel = () => {
   );
 
   return (
-    <section className="py-12 md:py-16 lg:py-18 bg-secondary">
+    <section className="py-12 md:py-16 lg:py-18 bg-slate-50">
       <div className="container grid gap-8 md:grid-cols-2 max-w-5xl">
         <div className="flex flex-col justify-center space-y-4">
           <div className="space-y-2">

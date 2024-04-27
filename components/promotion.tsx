@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const Promo = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-18 bg-secondary">
+    <section className="py-12 md:py-16 lg:py-18 bg-slate-50">
       <div className="container flex flex-col justify-between items-center max-w-5xl">
         <div className=" space-y-6 text-center">
           <div className="space-y-2">
