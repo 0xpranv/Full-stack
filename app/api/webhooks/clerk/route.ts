@@ -60,7 +60,7 @@ export async function POST(req: Request) {
       evt.data;
 
     const user = {
-      id: id,
+      clerk_id: id,
       phoneNumber: phone_numbers[0].phone_number,
       name: first_name,
       profile_img: image_url,
