@@ -1,15 +1,14 @@
 "use client";
 
-import * as React from "react";
+import React from "react";
 import Autoplay from "embla-carousel-autoplay";
 
-import { Card, CardContent } from "@/components/ui/card";
 import {
-  Carousel,
-  CarouselContent,
   CarouselItem,
-  CarouselNext,
+  CarouselContent,
   CarouselPrevious,
+  CarouselNext,
+  Carousel,
 } from "@/components/ui/carousel";
 
 export const TestimonialsCarousel = () => {
@@ -18,33 +17,47 @@ export const TestimonialsCarousel = () => {
   );
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="flex justify-center">
-        <Carousel
-          plugins={[plugin.current]}
-          className="w-full max-w-xs"
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
-        >
-          <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <span className="text-4xl font-semibold">
-                        {index + 1}
-                      </span>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+    <section className="py-12 md:py-16 lg:py-18 bg-secondary">
+      <div className="container grid gap-8 md:grid-cols-2 max-w-5xl">
+        <div className="flex flex-col justify-center space-y-4">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Our 10 Steps to Success
+            </h2>
+            <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Follow with our 10 Smooth Steps to Successfully get Yourself
+              Enrolled in Your Dream College
+            </p>
+          </div>
+        </div>
+        <div className="overflow-hidden">
+          <Carousel
+            plugins={[plugin.current]}
+            className=" max-w-xs"
+            // onMouseEnter={plugin.current.stop}
+            // onMouseLeave={plugin.current.reset}
+          >
+            <CarouselContent>
+              {Array.from({ length: 10 }).map((_, index) => (
+                <CarouselSlide key={index} index={index} />
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
       </div>
-    </div>
+    </section>
+  );
+};
+
+const CarouselSlide = ({ index }: { index: any }) => {
+  return (
+    <CarouselItem key={index}>
+      <div className="p-5 rounded-xl border w-full h-[365px]">
+        <span className="text-4xl font-semibold">{index + 1}</span>
+        <p>Hi there</p>
+      </div>
+    </CarouselItem>
   );
 };

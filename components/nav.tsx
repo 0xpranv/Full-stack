@@ -3,40 +3,46 @@ import { Button } from "@/components/ui/button";
 import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import { SignOutButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import AvatarDropdown from "./avatarDropdown";
+import { GraduationCap } from "lucide-react";
 
 export default function Navbar() {
   return (
     <header className="w-full bg-white shadow-sm dark:bg-gray-950">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-        <Link className="flex items-center gap-2" href="/">
-          <MountainIcon className="h-6 w-6" />
-          {/* <span className="text-lg font-semibold">Acme University</span> */}
-        </Link>
-        <div className="hidden lg:flex items-center space-x-6">
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="/universities"
-          >
-            Explore Universities
+        <div className="flex gap-6 md:gap-10">
+          <Link className="flex items-center gap-2" href="/">
+            {/* <MountainIcon className="h-6 w-6" /> */}
+            <GraduationCap className="h-6 w-6" />
+            <span className="font-bold sm:inline-block">helpstudyabroad</span>
           </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="/blog"
-          >
-            Blogs
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="/ask-our-experts"
-          >
-            Ask our Experts
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="/about"
-          >
-            About
-          </Link>
+          <div className="hidden lg:flex items-center gap-6">
+            <Link
+              className="text-sm font-medium hover:underline underline-offset-4 text-slate-600"
+              href="/universities"
+            >
+              Explore Universities
+            </Link>
+            <Link
+              className="text-sm font-medium hover:underline underline-offset-4 text-slate-600"
+              href="/blog"
+            >
+              Blogs
+            </Link>
+            <Link
+              className="text-sm font-medium hover:underline underline-offset-4 text-slate-600"
+              href="/ask-our-experts"
+            >
+              Ask our Experts
+            </Link>
+            <Link
+              className="text-sm font-medium hover:underline underline-offset-4 text-slate-600"
+              href="/about"
+            >
+              About
+            </Link>
+          </div>
+        </div>
+        <div className="hidden lg:flex">
           <SignedOut>
             <Link href={"/sign-in"}>
               <Button size="sm" variant="outline">
@@ -51,6 +57,7 @@ export default function Navbar() {
             </SignOutButton> */}
           </SignedIn>
         </div>
+
         <Sheet>
           <SheetTrigger asChild>
             <Button className="lg:hidden" size="icon" variant="outline">
