@@ -11,6 +11,8 @@ import {
   Carousel,
 } from "@/components/ui/carousel";
 
+import { tenStepProcessData } from "../data/tenStepProcessData";
+
 export const TestimonialsCarousel = () => {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
@@ -38,8 +40,8 @@ export const TestimonialsCarousel = () => {
             // onMouseLeave={plugin.current.reset}
           >
             <CarouselContent>
-              {Array.from({ length: 10 }).map((_, index) => (
-                <CarouselSlide key={index} index={index} />
+              {tenStepProcessData.map((item) => (
+                <CarouselSlide key={item.id} item={item} />
               ))}
             </CarouselContent>
             <CarouselPrevious />
@@ -51,12 +53,15 @@ export const TestimonialsCarousel = () => {
   );
 };
 
-const CarouselSlide = ({ index }: { index: any }) => {
+const CarouselSlide = ({ item }: { item: any }) => {
   return (
-    <CarouselItem key={index}>
-      <div className="p-5 rounded-xl border w-full h-[365px]">
-        <span className="text-4xl font-semibold">{index + 1}</span>
-        <p>Hi there</p>
+    <CarouselItem key={item.id}>
+      <div className="p-12 rounded-xl border w-full h-[365px]">
+        <span className="text-4xl font-semibold">{item.id}</span>
+        <h3 className="text-2xl font-semibold">{item.title}</h3>
+        <p className="font-light text-slate-700 text-justify">
+          {item.description}
+        </p>
       </div>
     </CarouselItem>
   );
