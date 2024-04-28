@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div className="flex flex-col pt-12 md:pt-16 lg:pt-18">
       <footer className="w-full">
-        <div className="hidden md:relative aspect-[4/1]">
+        <div className="hidden md:block relative aspect-[4/1]">
           <iframe
             className="w-full h-full"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7198.662017705696!2d83.97258333791753!3d25.560652009914627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992759f05555555%3A0x4a863a6a5b907dbb!2sGreen%20Dream%20Earth!5e0!3m2!1sen!2sin!4v1713641992953!5m2!1sen!2sin"
