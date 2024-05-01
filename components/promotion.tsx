@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export const Promo = () => {
   return (
@@ -23,9 +24,11 @@ export const Promo = () => {
             step and will get you into one of the world top universities!
           </p>
         </div>
-        <Button className="w-full mt-7 max-w-[300px]">
-          Book a free Call now!
-        </Button>
+        <Link href={"/booking"}>
+          <Button className="w-full mt-7 max-w-[300px]">
+            Book a free Call now!
+          </Button>
+        </Link>
       </div>
     </section>
   );

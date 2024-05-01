@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -14,10 +15,14 @@ export default function Hero() {
             </p>
           </div>
           <div className="pt-10 flex flex-col gap-2 min-[400px]:flex-row">
-            <Button className="bg-gray-900 text-gray-50 hover:bg-gray-900/90 focus-visible:ring-gray-950 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
-              Book a free consultation!
-            </Button>
-            <Button variant="secondary">Learn More</Button>
+            <Link href={"/booking"}>
+              <Button className="bg-gray-900 text-gray-50 hover:bg-gray-900/90 focus-visible:ring-gray-950 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
+                Book a free consultation!
+              </Button>
+            </Link>
+            <Link href={"/about"}>
+              <Button variant="secondary">Learn More</Button>
+            </Link>
           </div>
         </div>
         <img

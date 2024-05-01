@@ -19,25 +19,25 @@ export const Footer = () => {
               <div className="grid gap-2">
                 <Link
                   className="hover:underline hover:underline-offset-2"
-                  href="#"
+                  href="/about"
                 >
                   About
                 </Link>
                 <Link
                   className="hover:underline hover:underline-offset-2"
-                  href="#"
+                  href="/careers"
                 >
                   Careers
                 </Link>
                 <Link
                   className="hover:underline hover:underline-offset-2"
-                  href="#"
+                  href="/blog"
                 >
                   Blog
                 </Link>
                 <Link
                   className="hover:underline hover:underline-offset-2"
-                  href="#"
+                  href="/about"
                 >
                   Contact
                 </Link>
@@ -48,19 +48,19 @@ export const Footer = () => {
               <nav className="grid gap-2">
                 <Link
                   className="hover:underline hover:underline-offset-2"
-                  href="#"
+                  href="/booking"
                 >
                   Free Portfolio Review
                 </Link>
                 <Link
                   className="hover:underline hover:underline-offset-2"
-                  href="#"
+                  href="/booking"
                 >
                   Free 1:1 Consultation
                 </Link>
                 <Link
                   className="hover:underline hover:underline-offset-2"
-                  href="#"
+                  href="/more"
                 >
                   And Many More!
                 </Link>
@@ -91,19 +91,19 @@ export const Footer = () => {
             <div className="flex items-center space-x-4">
               <Link
                 className="text-sm hover:underline hover:underline-offset-2"
-                href="#"
+                href="/terms-and-policy"
               >
                 Privacy Policy
               </Link>
               <Link
                 className="text-sm hover:underline hover:underline-offset-2"
-                href="#"
+                href="/terms-and-policy"
               >
                 Terms of Service
               </Link>
               <Link
                 className="text-sm hover:underline hover:underline-offset-2"
-                href="#"
+                href="/terms-and-policy"
               >
                 Cookie Policy
               </Link>

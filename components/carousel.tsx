@@ -15,6 +15,7 @@ import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 
 import { tenStepProcessData } from "../data/tenStepProcessData";
 import { testmonialData } from "../data/testemonialsData";
+import Image from "next/image";
 
 export const CTA = () => {
   const plugin = React.useRef(
@@ -62,7 +63,7 @@ const CarouselSlide = ({ item }: { item: any }) => {
       <div className="p-12 rounded-xl border w-full h-[365px]">
         <span className="text-4xl font-semibold">{item.id}</span>
         <h3 className="text-2xl font-semibold">{item.title}</h3>
-        <p className="font-light text-slate-700 text-justify">
+        <p className="font-normal text-slate-500 text-justify pt-4">
           {item.description}
         </p>
       </div>
@@ -128,8 +129,25 @@ const TestimonialCarouselItem = ({
         <div className="text-center">
           <h3 className="text-lg font-semibold">{name}</h3>
           <p className="text-gray-500 dark:text-gray-400">{major}</p>
-          <blockquote className="mt-4 text-lg font-medium leading-relaxed max-w-2xl">
-            &quot;{testimony}&quot;
+          <blockquote className="mt-4 text-lg font-medium leading-relaxed max-w-2xl flex">
+            <div className="flex items-start justify-center w-full">
+              <img
+                src={"/testemonials/double-quote-serif-left.svg"}
+                height={30}
+                width={30}
+                alt="double quote"
+              />
+            </div>
+            {testimony}
+            <div className="w-full flex items-end justify-center">
+              <img
+                src={"/testemonials/double-quotes.svg"}
+                className="bottom-0"
+                height={30}
+                width={30}
+                alt="double quote"
+              />
+            </div>
           </blockquote>
         </div>
       </div>
