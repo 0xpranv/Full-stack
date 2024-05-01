@@ -14,6 +14,7 @@ import {
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 
 import { tenStepProcessData } from "../data/tenStepProcessData";
+import { testmonialData } from "../data/testemonialsData";
 
 export const CTA = () => {
   const plugin = React.useRef(
@@ -87,16 +88,16 @@ export default function TestemonialCarousel() {
         </div>
         <Carousel className="w-full" plugins={[plugin.current]}>
           <CarouselContent>
-            <TestimonialCarouselItem
-              name={"Emma Gonzalez"}
-              major={"Computer TEchnology"}
-              imgSrc={
-                "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df"
-              }
-              testimony={
-                "The professors at this university are truly exceptional. They have challenged me to think critically and have helped me grow both academically and personally."
-              }
-            />
+            {/* @ts-ignore */}
+            {testmonialData.map((user) => (
+              <TestimonialCarouselItem
+                key={user.id}
+                name={user.name}
+                major={user.major}
+                imgSrc={user.imageSrc ? user.imageSrc : ""}
+                testimony={user.testimony}
+              />
+            ))}
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
@@ -121,7 +122,7 @@ const TestimonialCarouselItem = ({
     <CarouselItem className="flex flex-col justify-center items-center">
       <div className="flex flex-col items-center gap-4 p-6 max-w-5xl">
         <Avatar className="h-20 w-20">
-          <AvatarImage alt={name} src={imgSrc} className="bg-cover" />
+          <AvatarImage alt={name} src={imgSrc} className="object-cover" />
           <AvatarFallback>{name[0]}</AvatarFallback>
         </Avatar>
         <div className="text-center">

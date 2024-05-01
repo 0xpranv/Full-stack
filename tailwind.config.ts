@@ -1,15 +1,14 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")
- 
+import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -24,6 +23,45 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
+        yellow: {
+          "50": "#FFFAEB",
+          "100": "#FFF5D6",
+          "200": "#FFECB3",
+          "300": "#FFE28A",
+          "400": "#FFD761",
+          "500": "#FFCE3C",
+          "600": "#FABB00",
+          "700": "#BD8E00",
+          "800": "#806000",
+          "900": "#3D2E00",
+          "950": "#1F1700",
+        },
+        orange: {
+          50: "#FFF5E5",
+          100: "#FFEDD1",
+          200: "#FFDAA3",
+          300: "#FFC875",
+          400: "#FFB647",
+          500: "#FFA319",
+          600: "#E08700",
+          700: "#A86500",
+          800: "#704300",
+          900: "#382200",
+          950: "#190F00",
+        },
+        teal: {
+          50: "#F0FAFA",
+          100: "#E0F5F5",
+          200: "#C2EBEB",
+          300: "#A3E0E0",
+          400: "#85D6D6",
+          500: "#66CCCC",
+          600: "#3DB8B8",
+          700: "#2E8A8A",
+          800: "#1F5C5C",
+          900: "#0F2E2E",
+          950: "#081717",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -80,6 +118,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

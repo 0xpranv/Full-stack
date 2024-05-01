@@ -67,6 +67,8 @@ export async function POST(req: Request) {
     };
     console.log(user);
 
+    // Check if the user already exists in the db
+
     const newUser = await createUser(user);
 
     if (newUser) {
