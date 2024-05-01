@@ -26,7 +26,7 @@ export default function BookingPage() {
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="name">
-                      Degree you're planning to study
+                      Degree you&apos;re planning to study
                     </Label>
                     <Input id="name" placeholder="Enter your name" required />
                   </div>
@@ -67,8 +67,8 @@ export default function BookingPage() {
               <p className="mt-4 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 During the call, our team will discuss your career goals, go
                 brief over your portfolio to give you pointers, and how our
-                services can help you achieve your goals. We'll also answer any
-                questions you may have and provide a personalized
+                services can help you achieve your goals. We&apos;ll also answer
+                any questions you may have and provide a personalized
                 recommendation.
               </p>
             </div>
