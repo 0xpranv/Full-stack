@@ -29,6 +29,14 @@ model User {
   @@map("users")
 }
 
+model Expert {
+  id          String  @id @default(uuid()) @db.Uuid
+  name        String
+  phoneNumber String  @unique
+  email       String
+  password    String?
+}
+
 model Blog {
   id        String   @id @default(uuid()) @db.Uuid
   title     String

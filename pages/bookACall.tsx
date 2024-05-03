@@ -1,8 +1,22 @@
+"use client";
+
 import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
+import { InlineWidget } from "react-calendly";
+import { useState } from "react";
 
 export default function BookingPage() {
+  const date = new Date().getFullYear();
+  const [calenderVisible, setCalenderVisible] = useState(false);
   return (
     <>
       <section className="py-12 md:py-16 lg:py-18 bg-slate-50">
@@ -21,39 +35,103 @@ export default function BookingPage() {
               Get guidance on country, intake, deadlines, tests, eligibility
               criteria...
             </p>
-            <div className="pt-5">
-              <form className="space-y-4">
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {!calenderVisible ? (
+              <div className={`pt-5 `}>
+                <form className="space-y-4">
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div className="space-y-2">
+                      <Label htmlFor="name">
+                        Degree you&apos;re planning to study
+                      </Label>
+                      <RadioGroup defaultValue="option-one">
+                        <div className="flex items-center space-x-2">
+                          <RadioGroupItem value="bachelors" id="option-one" />
+                          <Label htmlFor="option-one">Bachelor&apos;s</Label>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <RadioGroupItem value="masters" id="option-two" />
+                          <Label htmlFor="option-two">Master&apos;s</Label>
+                        </div>
+                      </RadioGroup>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="name">
+                        When are you going to study abroad?
+                      </Label>
+                      <RadioGroup defaultValue="option-one">
+                        <div className="flex items-center space-x-2">
+                          <RadioGroupItem
+                            value={date.toString()}
+                            id="option-one"
+                          />
+                          <Label htmlFor="option-one">{date.toString()}</Label>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <RadioGroupItem
+                            value={(date + 1).toString()}
+                            id="option-two"
+                          />
+                          <Label htmlFor="option-two">
+                            {(date + 1).toString()}
+                          </Label>
+                        </div>
+
+                        <div className="flex items-center space-x-2">
+                          <RadioGroupItem
+                            value={(date + 2).toString()}
+                            id="option-three"
+                          />
+                          <Label htmlFor="option-three">
+                            {(date + 2).toString()}
+                          </Label>
+                        </div>
+                      </RadioGroup>
+                    </div>
+                  </div>
                   <div className="space-y-2">
-                    <Label htmlFor="name">
-                      Degree you&apos;re planning to study
+                    <Label htmlFor="">
+                      How are you planning your study abroad process?
                     </Label>
-                    <Input id="name" placeholder="Enter your name" required />
+                    <Select>
+                      <SelectTrigger className="w-full">
+                        <SelectValue placeholder="select" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="light">
+                          I&apos;m doing it myself
+                        </SelectItem>
+                        <SelectItem value="dark">
+                          Joined another Consultancy
+                        </SelectItem>
+                        <SelectItem value="system">
+                          Need Professional Counselling
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
                   </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone</Label>
-                    <Input
-                      id="phone"
-                      placeholder="Enter your phone number"
-                      required
-                      type="text"
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="time">Preferred Call Time</Label>
-                  <Input
-                    id="time"
-                    placeholder="Select a time"
-                    required
-                    type="datetime-local"
-                  />
-                </div>
-                <Button className="w-full" type="submit">
-                  Schedule Call
+                  <Button
+                    className="w-full"
+                    onClick={() => {
+                      setCalenderVisible(true);
+                    }}
+                  >
+                    Continue
+                  </Button>
+                </form>
+              </div>
+            ) : (
+              <div className="">
+                <Button
+                  className="btn"
+                  onClick={() => {
+                    setCalenderVisible(false);
+                  }}
+                >
+                  Back
                 </Button>
-              </form>
-            </div>
+                <InlineWidget url="https://calendly.com/pranav-v5qa/free-1-1-consultation" />
+              </div>
+            )}
           </div>
         </div>
       </section>
