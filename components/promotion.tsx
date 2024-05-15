@@ -4,7 +4,7 @@ import Link from "next/link";
 export const Promo = () => {
   return (
     <section className="py-12 md:py-16 lg:py-18 bg-slate-50">
-      <div className="container flex flex-col justify-between items-center max-w-5xl">
+      <div className="container flex flex-col justify-between items-center ">
         <div className=" space-y-6 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

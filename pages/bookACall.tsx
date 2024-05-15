@@ -20,7 +20,7 @@ export default function BookingPage() {
   return (
     <>
       <section className="py-12 md:py-16 lg:py-18 bg-slate-50">
-        <div className="container grid items-center px-4 md:px-6   max-w-5xl">
+        <div className="container grid items-center px-4 md:px-6   ">
           {/* <img
             alt="Book a Call"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
@@ -136,7 +136,7 @@ export default function BookingPage() {
         </div>
       </section>
       <section className="py-12 md:py-16 lg:py-18 ">
-        <div className="container px-4 md:px-6 max-w-5xl">
+        <div className="container px-4 md:px-6 ">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

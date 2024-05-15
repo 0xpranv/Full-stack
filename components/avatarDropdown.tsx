@@ -22,17 +22,17 @@ export default function AvatarDropdown() {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-48 rounded-md border border-gray-200 bg-white shadow-lg dark:border-gray-800 dark:bg-gray-950">
           <DropdownMenuItem>
-            <Link className="flex items-center gap-2" href="#">
+            <Link className="flex items-center gap-2" href="/user-profile">
               <UserIcon className="h-4 w-4" />
               View Profile
             </Link>
           </DropdownMenuItem>
-          <DropdownMenuItem>
+          {/* <DropdownMenuItem>
             <Link className="flex items-center gap-2" href="#">
               <SettingsIcon className="h-4 w-4" />
               Settings
             </Link>
-          </DropdownMenuItem>
+          </DropdownMenuItem> */}
           <DropdownMenuSeparator />
           <DropdownMenuItem>
             <Link className="flex items-center gap-2" href="">

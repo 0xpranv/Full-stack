@@ -8,12 +8,14 @@ import { GraduationCap } from "lucide-react";
 export default function Navbar() {
   return (
     <header className="w-full bg-white shadow-sm dark:bg-gray-950">
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container flex h-16 items-center justify-between ">
         <div className="flex gap-6 md:gap-10">
           <Link className="flex items-center gap-2" href="/">
             {/* <MountainIcon className="h-6 w-6" /> */}
-            <GraduationCap className="h-6 w-6" />
-            <span className="font-bold sm:inline-block">helpstudyabroad</span>
+            <GraduationCap className="h-6 w-6 text-primary" />
+            <span className="font-bold text-primary sm:inline-block">
+              HelpStudyAbroad.com
+            </span>
           </Link>
           <div className="hidden lg:flex items-center gap-6">
             <Link

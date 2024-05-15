@@ -1,16 +1,19 @@
+import { CTA } from "@/components/CTA";
 import Hero from "@/components/Hero";
-import TestemonialCarousel, { CTA } from "@/components/carousel";
-import { Promo } from "@/components/promotion";
-import { Services } from "@/components/services";
+import TestemonialCarousel from "@/components/carousel";
+import { Faq } from "@/components/faq";
+import Reasons from "@/components/reasons";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="space-y-12 md:space-y-16 lg:space-y-18 py-12 md:py-16 lg:py-18">
       <Hero />
+      <Reasons />
       <CTA />
-      <Services />
+      {/* <Services /> */}
       <TestemonialCarousel />
-      <Promo />
+      {/* <Promo /> */}
+      <Faq />
     </main>
   );
 }

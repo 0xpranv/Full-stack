@@ -1,7 +1,7 @@
 export const Services = () => {
   return (
     <section className="py-12 md:py-16 lg:py-18">
-      <div className="container max-w-5xl">
+      <div className="container ">
         <div className="mb-12 text-center">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Our Services
