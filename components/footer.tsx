@@ -13,9 +13,9 @@ export const Footer = () => {
           ></iframe>
         </div> */}
         <div className="bg-gray-900 text-gray-50 dark:bg-gray-950 dark:text-gray-50 px-4 py-8 md:px-6 lg:px-8">
-          <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-12">
-            <div className="space-y-4 col-span-4">
-              <h4 className="text-lg font-semibold">Green Dream Earth</h4>
+          <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-8">
+            <div className="space-y-4 col-span-2">
+              <h4 className="text-lg font-semibold">HelpStudyAbroad.com</h4>
               <div className="grid gap-2">
                 <Link
                   className="hover:underline hover:underline-offset-2"
@@ -39,25 +39,16 @@ export const Footer = () => {
                   className="hover:underline hover:underline-offset-2"
                   href="/about"
                 >
-                  Contact
+                  Help Center
                 </Link>
               </div>
             </div>
-            <div className="space-y-4 col-span-4">
-              <h4 className="text-lg font-semibold">Services</h4>
+            <div className="space-y-4 col-span-2">
+              <h4 className="text-lg font-semibold">World Top Universities</h4>
               <nav className="grid gap-2">
-                <Link
-                  className="hover:underline hover:underline-offset-2"
-                  href="/booking"
-                >
-                  Free Portfolio Review
-                </Link>
-                <Link
-                  className="hover:underline hover:underline-offset-2"
-                  href="/booking"
-                >
-                  Free 1:1 Consultation
-                </Link>
+                <FooterElement title="University of Oxford, UK" />
+                <FooterElement title="Standford University, US" />
+                <FooterElement title="Massachusetts Tech, US" />
                 <Link
                   className="hover:underline hover:underline-offset-2"
                   href="/more"
@@ -66,7 +57,16 @@ export const Footer = () => {
                 </Link>
               </nav>
             </div>
-            <div className="space-y-4 col-span-4">
+            <div className="space-y-4 col-span-2">
+              <h4 className="text-lg font-semibold">Popular Destinations</h4>
+              <nav className="grid gap-2">
+                <FooterElement title="United States" />
+                <FooterElement title="United Kingdom" />
+                <FooterElement title="Canada" />
+                <FooterElement title="Australia" />
+              </nav>
+            </div>
+            <div className="space-y-4 col-span-2">
               <h4 className="text-lg font-semibold">Follow Us</h4>
               <div className="flex items-center space-x-4">
                 <Link
@@ -126,6 +126,23 @@ export const Footer = () => {
     </div>
   );
 };
+
+export function FooterElement({
+  title,
+  href,
+}: {
+  title: string;
+  href?: string;
+}) {
+  return (
+    <Link
+      className="hover:underline hover:underline-offset-2"
+      href={href || "/universities"}
+    >
+      {title}
+    </Link>
+  );
+}
 
 function FacebookIcon(props: any) {
   return (

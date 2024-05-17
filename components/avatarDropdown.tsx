@@ -1,3 +1,5 @@
+"use client";
+
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import {
   DropdownMenuTrigger,
@@ -7,16 +9,25 @@ import {
   DropdownMenu,
 } from "@/components/ui/dropdown-menu";
 import { SignOutButton } from "@clerk/nextjs";
+import { useUser } from "@clerk/clerk-react";
 import Link from "next/link";
 
 export default function AvatarDropdown() {
+  const { isSignedIn, user, isLoaded } = useUser();
   return (
     <div className="top-4 right-4 z-50">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Avatar className="h-10 w-10 cursor-pointer">
-            <AvatarImage alt="@shadcn" src="/placeholder-avatar.jpg" />
-            <AvatarFallback>U</AvatarFallback>
+            {isSignedIn && isLoaded ? (
+              <AvatarImage
+                className="object-cover"
+                alt="user image"
+                src={user.imageUrl}
+              />
+            ) : (
+              <AvatarFallback>U</AvatarFallback>
+            )}
             <span className="sr-only">Toggle user menu</span>
           </Avatar>
         </DropdownMenuTrigger>

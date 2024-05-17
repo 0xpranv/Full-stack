@@ -12,7 +12,7 @@ export default function Hero() {
             <p className="text-lg font-semibold">
               Click below and take your best decision of the day!
             </p>
-            <div className="text-slate-500 ">
+            <div className="text-slate-700 ">
               What we offer in this call?
               <ul className="list-disc px-6">
                 <li>Get our free Profile Analysis.</li>
