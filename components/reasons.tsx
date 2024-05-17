@@ -5,7 +5,7 @@ import { Button } from "./button";
 
 const Reasons = () => {
   return (
-    <section className="text-gray-600">
+    <section className="text-gray-600 bg-slate-50 py-10">
       <div className="container mx-auto flex flex-wrap">
         <h2 className="text-center font-bold text-3xl w-full mx-auto">
           Reasons to book a free consultation now

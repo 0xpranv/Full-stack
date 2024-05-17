@@ -81,8 +81,8 @@ export default function TestemonialCarousel() {
   );
 
   return (
-    <div className="w-full">
-      <div className="container overflow-hidden flex flex-col justify-center items-center">
+    <section className="w-full bg-slate-50">
+      <div className="container overflow-hidden flex flex-col justify-center items-center py-10">
         <div className="text-center mb-20">
           <h2 className="text-gray-600 text-center font-bold text-3xl w-full mx-auto">
             What Our Students Say!
@@ -116,7 +116,7 @@ export default function TestemonialCarousel() {
           <CarouselNext />
         </Carousel>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -134,10 +134,10 @@ const TestimonialCarouselItem = ({
   University: string;
 }) => {
   return (
-    <CarouselItem className="flex flex-col justify-center items-center md:basis-1/2">
+    <CarouselItem className="flex flex-col justify-center items-center p-4 md:basis-1/2 ">
       <div className="flex flex-wrap ">
         <div className="w-full">
-          <div className="h-96 md:h-80 lg:h-72 flex flex-col justify-between bg-gray-100 p-8 rounded">
+          <div className="h-96 md:h-80 lg:h-72 flex flex-col justify-between bg-gray-100 border border-primary/50 hover:scale-105 hover:shadow-primary/20 transform transition ease-in-out delay-100 p-8 rounded-lg shadow-xl">
             <div className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -12,11 +12,11 @@ export const Footer = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div> */}
-        <div className="bg-gray-900 text-gray-50 dark:bg-gray-950 dark:text-gray-50 px-4 py-8 md:px-6 lg:px-8">
+        <div className="bg-gray-900 text-gray-50 px-4 py-8 md:px-6 lg:px-8">
           <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-8">
             <div className="space-y-4 col-span-2">
               <h4 className="text-lg font-semibold">HelpStudyAbroad.com</h4>
-              <div className="grid gap-2">
+              <div className="grid gap-2 text-gray-400">
                 <Link
                   className="hover:underline hover:underline-offset-2"
                   href="/about"
@@ -45,7 +45,7 @@ export const Footer = () => {
             </div>
             <div className="space-y-4 col-span-2">
               <h4 className="text-lg font-semibold">World Top Universities</h4>
-              <nav className="grid gap-2">
+              <nav className="grid gap-2 text-gray-400">
                 <FooterElement title="University of Oxford, UK" />
                 <FooterElement title="Standford University, US" />
                 <FooterElement title="Massachusetts Tech, US" />
@@ -59,7 +59,7 @@ export const Footer = () => {
             </div>
             <div className="space-y-4 col-span-2">
               <h4 className="text-lg font-semibold">Popular Destinations</h4>
-              <nav className="grid gap-2">
+              <nav className="grid gap-2 text-gray-400">
                 <FooterElement title="United States" />
                 <FooterElement title="United Kingdom" />
                 <FooterElement title="Canada" />
@@ -70,25 +70,25 @@ export const Footer = () => {
               <h4 className="text-lg font-semibold">Follow Us</h4>
               <div className="flex items-center space-x-4">
                 <Link
-                  className="text-gray-50 hover:text-gray-300"
+                  className="text-gray-400 hover:text-gray-300"
                   href="https://www.youtube.com/@HelpStudyAbroad-dot-com"
                 >
                   <YoutubeIcon className="h-6 w-6" />
                 </Link>
                 <Link
-                  className="text-gray-50 hover:text-gray-300"
+                  className="text-gray-400 hover:text-gray-300"
                   href="https://www.facebook.com/helpstudyabroad.in/"
                 >
                   <FacebookIcon className="h-6 w-6" />
                 </Link>
                 <Link
-                  className="text-gray-50 hover:text-gray-300"
+                  className="text-gray-400 hover:text-gray-300"
                   href="https://www.linkedin.com/company/helpstudyabroad-dot-com/"
                 >
                   <LinkedinIcon className="h-6 w-6" />
                 </Link>
                 <Link
-                  className="text-gray-50 hover:text-gray-300"
+                  className="text-gray-400 hover:text-gray-300"
                   href="https://www.instagram.com/helpstudyabroad.co/ "
                 >
                   <InstagramIcon className="h-6 w-6" />

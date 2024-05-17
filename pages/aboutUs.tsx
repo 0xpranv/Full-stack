@@ -1,8 +1,5 @@
 import { Button } from "@/components/button";
 import { H1 } from "@/components/heading";
-import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
-import { CardContent, Card } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
 import Image from "next/image";
 
 export default function AboutUs() {
@@ -12,9 +9,9 @@ export default function AboutUs() {
         <div className="container mx-auto flex md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
-              className="bg-slate-200 rounded-xl object-cover lg:order-first w-full md:w-5/6"
+              className="bg-slate-200 rounded-xl lg:order-first w-full"
               alt="hero"
-              src="https://plus.unsplash.com/premium_photo-1665657351654-3d4fcb68335f"
+              src="https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78"
               height={500}
               width={500}
             />
@@ -47,17 +44,15 @@ export default function AboutUs() {
               <h2 className="text-center md:text-left font-bold text-3xl w-full">
                 Our Vision
               </h2>
-              <p className="text-gray-500 text-lg md:text-xl text-justify md:text-pretty">
-                To be the leading provider of innovative solutions that
-                transform industries and empower our customers to achieve their
-                goals.
+              <p className="text-gray-500 text-lg md:text-xl text-justify ">
+              To create cutting-edge technology that drives progress, fosters collaboration, and inspires our team to push the boundaries of what″s possible.
               </p>
             </div>
             <div>
               <h2 className="text-center md:text-left font-bold text-3xl w-full">
                 Our Mission
               </h2>
-              <p className="text-gray-500 text-lg md:text-xl text-justify md:text-pretty">
+              <p className="text-gray-500 text-lg md:text-xl text-justify ">
                 To create cutting-edge technology that drives progress, fosters
                 collaboration, and inspires our team to push the boundaries of
                 what&Prime;s possible.
@@ -82,14 +77,20 @@ export default function AboutUs() {
               imgSrc="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
             />
             <TeamCard
-              name="Tahsin Bhai"
+              name="Tahsin Chouhan"
               position="CTO"
               intro="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."
               imgSrc="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
             />
             <TeamCard
-              name="Tahsin Bhai"
+              name="Pranav Sonawane"
               position="CFO"
+              intro="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."
+              imgSrc="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+            />
+             <TeamCard
+              name="Rahul Kumar"
+              position="CEO"
               intro="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."
               imgSrc="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
             />

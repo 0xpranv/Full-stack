@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
         <Image
           src="https://plus.unsplash.com/premium_photo-1683887034146-c79058dbdcb1"
-          className=" bg-slate-200 rounded-xl object-cover lg:order-first w-full md:w-5/6"
+          className="bg-slate-200 rounded-xl lg:order-first w-full md:w-5/6"
           height={500}
           width={500}
           alt="students studying"
