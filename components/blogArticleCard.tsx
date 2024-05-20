@@ -16,7 +16,7 @@ export const BlogArticleCard = ({ post }: { post: BlogArticleCardProps }) => {
   return (
     <article
       onClick={() => router.push("/blog/" + post.slug)}
-      className="group relative flex flex-col space-y-2 p-4 bg-slate-100 rounded-lg border hover:cursor-pointer border-primary/50 hover:scale-[1.02] shadow-lg hover:shadow-2xl hover:shadow-primary/20 transform transition ease-in-out delay-100"
+      className="group justify-between relative flex flex-col space-y-2 p-4 bg-slate-100 rounded-lg border hover:cursor-pointer hover:scale-[1.02] shadow-lg hover:shadow-2xl hover:shadow-primary/20 transform transition ease-in-out delay-100"
     >
       {/* {post.image && ( */}
       <Image

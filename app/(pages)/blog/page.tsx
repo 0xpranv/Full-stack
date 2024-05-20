@@ -28,7 +28,7 @@ export default async function BlogPage() {
         </div>
       </section>
 
-      <section className="grid gap-10 md:grid-cols-3 py-12">
+      <section className="grid gap-10 md:grid-cols-3 pb-12">
         {blogData.map((post) => (
           <BlogArticleCard key={post.title} post={post} />
         ))}

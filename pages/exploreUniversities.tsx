@@ -9,7 +9,7 @@ export default function ExploreUniversities() {
         <div className="flex flex-col gap-6 md:gap-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="grid gap-1">
-              <h2 className="text-3xl font-bold tracking-tight">
+              <h2 className="text-center md:text-left font-bold text-3xl w-full">
                 Top Universities
               </h2>
               <p className="text-gray-700">

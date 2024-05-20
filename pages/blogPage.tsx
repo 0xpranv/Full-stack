@@ -1,6 +1,5 @@
 "use client";
 
-import { H1 } from "@/components/heading";
 import { useParams } from "next/navigation";
 import { blogData } from "@/data/staticData";
 

@@ -305,6 +305,7 @@ const universityData = [{
   QS_Rankings: 1,
   Times_Rankings: 3,
   university: "Massachusetts Institute of Technology",
+  type: "Public",
   slug: "massachusetts-institute-of-technology",
   country: "United States",
   address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
@@ -312,6 +313,7 @@ const universityData = [{
     out_of_state_tuition_fee: "$53,790",
     accomodation_expenses: "$16,390",
   },
+  exams_accepted: ["TOEFL", "IELTS", "GMAT", "DUOLINGO"],
   courses_offered: [{
     course_id: 1,
     course: "B.tech",
@@ -342,12 +344,28 @@ const universityData = [{
       name: "C Programming",
       description: "M1"
     }]
+  }, {
+    course_id: 3,
+    course: "Science",
+    title: "Science Services",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Psychology",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
   }]
 }, {
   uni_id: 2,
   QS_Rankings: 3,
   Times_Rankings: 6,
   university: "University of Cambridge",
+  type: "Private",
   slug: "university-of-cambridge",
   country: "United Kingdom",
   address: "The Old Schools, Trinity Lane, Cambridge, Cambridgeshire, CB2 1TN, United Kingdom",
@@ -391,6 +409,7 @@ const universityData = [{
   QS_Rankings: 4,
   Times_Rankings: 13,
   university: "Massachusetts Institute of Technology",
+  type: "Private",
   slug: "massachusetts-institute-of-technology",
   country: "Australia",
   address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
@@ -398,6 +417,7 @@ const universityData = [{
     out_of_state_tuition_fee: "$53,790",
     accomodation_expenses: "$16,390",
   },
+  exams_accepted: ["TOEFL", "IELTS", "GMAT", "DUOLINGO"],
   courses_offered: [{
     course_id: 1,
     course: "B.tech",
@@ -434,6 +454,7 @@ const universityData = [{
   QS_Rankings: 6,
   Times_Rankings: 12,
   university: "Massachusetts Institute of Technology",
+  type: "Public",
   slug: "massachusetts-institute-of-technology",
   country: "United States",
   address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
@@ -477,6 +498,7 @@ const universityData = [{
   QS_Rankings: 7,
   Times_Rankings: 7,
   university: "Stanford University",
+  type: "Private",
   slug: "stanford-university",
   country: "United States",
   address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
@@ -484,6 +506,7 @@ const universityData = [{
     out_of_state_tuition_fee: "$53,790",
     accomodation_expenses: "$16,390",
   },
+  exams_accepted: ["GRE", "TOEFL", "IELTS", "GMAT"],
   courses_offered: [{
     course_id: 1,
     course: "B.tech",

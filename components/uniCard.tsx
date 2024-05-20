@@ -14,6 +14,7 @@ interface UniversityProps {
   QS_Rankings: number;
   Times_Rankings: number;
   university: string;
+  type: string;
   slug: string;
   country: string;
   address: string;
@@ -21,6 +22,7 @@ interface UniversityProps {
     out_of_state_tuition_fee: string;
     accomodation_expenses: string;
   };
+  exams_accepted?: any;
   courses_offered: any;
 }
 
@@ -29,17 +31,42 @@ export const UniCard = ({ data }: { data: UniversityProps }) => {
   return (
     <div
       onClick={() => router.push("/universities/" + data.slug)}
-      className="grid gap-4 p-6 rounded-lg border border-primary/50 shadow-sm hover:cursor-pointer hover:shadow-xl hover:scale-[0.98] transform transition ease-in-out delay-100 hover:shadow-primary/10 bg-slate-50"
+      className="grid gap-4 p-6 rounded-lg border shadow-sm hover:cursor-pointer hover:shadow-xl hover:scale-[0.98] transform transition ease-in-out delay-100 hover:shadow-primary/10 bg-slate-50"
     >
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold">{data.university}</h3>
+        <div className="flex flex-col items-start gap-2 text-sm text-gray-500">
+          <h3 className="text-lg font-semibold text-gray-800">
+            {data.university}
+          </h3>
+          <div className="flex gap-2 items-center">
+            <MapPinIcon className="w-4 h-4" />
+            <h3 className="">
+              {data.country} . {data.type}
+            </h3>
+          </div>
+          <div className="flex gap-3">
+            <div className="">
+              <p className="font-light">Courses offered</p>
+              <p className="">{`${data.courses_offered.length} Courses`}</p>
+            </div>
+            <div className="">
+              <p className="font-light">Exams Accepted</p>
+              {data.exams_accepted ? (
+                <p className="">
+                  {data.exams_accepted.length > 2
+                    ? `${data.exams_accepted[0]}, ${data.exams_accepted[1]}
+                     +${data.exams_accepted.length - 2}`
+                    : data.exams_accepted.join(", ")}
+                </p>
+              ) : (
+                <p className="">- / -</p>
+              )}
+            </div>
+          </div>
+        </div>
         <span className="font-semibold text-3xl font-semibold">
           {data.QS_Rankings}
         </span>
-      </div>
-      <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-        <MapPinIcon className="w-4 h-4" />
-        {data.country}
       </div>
     </div>
   );
