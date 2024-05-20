@@ -55,10 +55,10 @@ export default function UniversityDetails() {
             <AccordionContent>
               <p className="text-xl text-muted-foreground mt-2">
                 Oxford University, located at University Offices, Wellington
-                Square, Oxford OX1 2JD, United Kingdom, is one of the world's
-                leading academic institutions. With a rich history dating back
-                to the 12th century, it is the oldest university in the
-                English-speaking world. The university is renowned for its
+                Square, Oxford OX1 2JD, United Kingdom, is one of the
+                world&lsquo;s leading academic institutions. With a rich history
+                dating back to the 12th century, it is the oldest university in
+                the English-speaking world. The university is renowned for its
                 distinctive collegiate system, where students and faculty
                 interact closely in pursuit of academic excellence. Oxford is
                 known for its rigorous academic programs, world-class research,
