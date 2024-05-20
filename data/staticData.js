@@ -262,10 +262,298 @@ const faqs = [
   },
 ];
 
+const blogData = [{
+  slug: "how-to-choose-the-right-university-for-your-studies",
+  title: "How to Choose the Right University for Your Studies",
+  description: "Choosing the right university is a crucial decision that can have a significant impact on your academic and professional future. With thousands of universities around the world to choose from, finding the right fit can be overwhelming. Here are some tips to help you select the best university for your studies.",
+  imageSrc: "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+  date: "2021-09-01",
+}, {
+  slug: "how-to-choose-the-right-university-for-your-studies-abroad",
+  title: "How to Choose the Right University for Your Studies Abroadddddd",
+  description: "Choosing the right university is a crucial decision that can have a significant impact on your academic and professional future. With thousands of universities around the world to choose from, finding the right fit can be overwhelming. Here are some tips to help you select the best university for your studies.",
+  imageSrc: "https://plus.unsplash.com/premium_photo-1665329006985-04f95dd59402",
+  date: "2022-11-12",
+}, {
+  slug: "how-to-choose-the-right-university-for-your-studies",
+  title: "How to Choose the Right University for Your Studies",
+  description: "Choosing the right university is a crucial decision that can have a significant impact on your academic and professional future. With thousands of universities around the world to choose from, finding the right fit can be overwhelming. Here are some tips to help you select the best university for your studies.",
+  imageSrc: "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+  date: "2021-09-01",
+}, {
+  slug: "how-to-choose-the-right-university-for-your-studies",
+  title: "How to Choose the Right University for Your Studies",
+  description: "Choosing the right university is a crucial decision that can have a significant impact on your academic and professional future. With thousands of universities around the world to choose from, finding the right fit can be overwhelming. Here are some tips to help you select the best university for your studies.",
+  imageSrc: "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+  date: "2021-09-01",
+}, {
+  slug: "how-to-choose-the-right-university-for-your-studies",
+  title: "How to Choose the Right University for Your Studies",
+  description: "Choosing the right university is a crucial decision that can have a significant impact on your academic and professional future. With thousands of universities around the world to choose from, finding the right fit can be overwhelming. Here are some tips to help you select the best university for your studies.",
+  imageSrc: "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+  date: "2021-09-01",
+}, {
+  slug: "how-to-choose-the-right-university-for-your-studies",
+  title: "How to Choose the Right University for Your Studies",
+  description: "Choosing the right university is a crucial decision that can have a significant impact on your academic and professional future. With thousands of universities around the world to choose from, finding the right fit can be overwhelming. Here are some tips to help you select the best university for your studies.",
+  imageSrc: "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+  date: "2021-09-01",
+},]
+
+const universityData = [{
+  uni_id: 1,
+  QS_Rankings: 1,
+  Times_Rankings: 3,
+  university: "Massachusetts Institute of Technology",
+  slug: "massachusetts-institute-of-technology",
+  country: "United States",
+  address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
+  uni_fees: {
+    out_of_state_tuition_fee: "$53,790",
+    accomodation_expenses: "$16,390",
+  },
+  courses_offered: [{
+    course_id: 1,
+    course: "B.tech",
+    title: "Computer Engineering",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Engineering Mathematics",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }, {
+    course_id: 2,
+    course: "Law",
+    title: "Law in Social Services",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Psychology",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }]
+}, {
+  uni_id: 2,
+  QS_Rankings: 3,
+  Times_Rankings: 6,
+  university: "University of Cambridge",
+  slug: "university-of-cambridge",
+  country: "United Kingdom",
+  address: "The Old Schools, Trinity Lane, Cambridge, Cambridgeshire, CB2 1TN, United Kingdom",
+  uni_fees: {
+    out_of_state_tuition_fee: "$53,790",
+    accomodation_expenses: "$16,390",
+  },
+  courses_offered: [{
+    course_id: 1,
+    course: "B.tech",
+    title: "Computer Engineering",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Engineering Mathematics",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }, {
+    course_id: 2,
+    course: "Law",
+    title: "Law in Social Services",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Psychology",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }]
+}, {
+  uni_id: 3,
+  QS_Rankings: 4,
+  Times_Rankings: 13,
+  university: "Massachusetts Institute of Technology",
+  slug: "massachusetts-institute-of-technology",
+  country: "Australia",
+  address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
+  uni_fees: {
+    out_of_state_tuition_fee: "$53,790",
+    accomodation_expenses: "$16,390",
+  },
+  courses_offered: [{
+    course_id: 1,
+    course: "B.tech",
+    title: "Computer Engineering",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Engineering Mathematics",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }, {
+    course_id: 2,
+    course: "Law",
+    title: "Law in Social Services",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Psychology",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }]
+}, {
+  uni_id: 4,
+  QS_Rankings: 6,
+  Times_Rankings: 12,
+  university: "Massachusetts Institute of Technology",
+  slug: "massachusetts-institute-of-technology",
+  country: "United States",
+  address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
+  uni_fees: {
+    out_of_state_tuition_fee: "$53,790",
+    accomodation_expenses: "$16,390",
+  },
+  courses_offered: [{
+    course_id: 1,
+    course: "B.tech",
+    title: "Computer Engineering",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Engineering Mathematics",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }, {
+    course_id: 2,
+    course: "Law",
+    title: "Law in Social Services",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Psychology",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }]
+}, {
+  uni_id: 5,
+  QS_Rankings: 7,
+  Times_Rankings: 7,
+  university: "Stanford University",
+  slug: "stanford-university",
+  country: "United States",
+  address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
+  uni_fees: {
+    out_of_state_tuition_fee: "$53,790",
+    accomodation_expenses: "$16,390",
+  },
+  courses_offered: [{
+    course_id: 1,
+    course: "B.tech",
+    title: "Computer Engineering",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Engineering Mathematics",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }, {
+    course_id: 2,
+    course: "Law",
+    title: "Law in Social Services",
+    fees: "$10,051",
+    duration: "2 Years",
+    subjects: [{
+      subject_id: 1,
+      name: "Psychology",
+      description: "M1"
+    }, {
+      subject_id: 2,
+      name: "C Programming",
+      description: "M1"
+    }]
+  }]
+},]
+
+const expertsData = [{
+  id: 1,
+  name: "Michael Johnson",
+  imgSrc: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+  designation: "Expert Student Counsellor",
+  specialization: "PHD in Applied Science",
+  about: "Michael is a Expert Student Counsellor with a proven track record of driving growth and engagement for various student. He specializes in delivering excellent support to the student he mentors."
+}, {
+  id: 2,
+  name: "Skylar Johnson",
+  imgSrc: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+  designation: "Expert Student Counsellor",
+  specialization: "PHD in Applied Science",
+  about: "Sky is a Expert Student Counsellor with a proven track record of driving growth and engagement for various student. He specializes in delivering excellent support to the student he mentors."
+}, {
+  id: 3,
+  name: "Michael Jackson",
+  imgSrc: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+  designation: "Expert Student Counsellor",
+  specialization: "PHD in Applied Science",
+  about: "Michael is a Expert Student Counsellor with a proven track record of driving growth and engagement for various student. He specializes in delivering excellent support to the student he mentors."
+}, {
+  id: 4,
+  name: "Joe Goldberg",
+  imgSrc: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+  designation: "Expert Student Counsellor",
+  specialization: "PHD in history",
+  about: "Joe is a Expert Student Counsellor with a proven track record of driving growth and engagement for various student. He specializes in delivering excellent support to the student he mentors."
+},]
+
 export {
   ourServicesData,
   testmonialData,
   SevenStepProcessData,
   fiveReasons,
   faqs,
+  blogData,
+  universityData,
+  expertsData
 };

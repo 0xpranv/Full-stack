@@ -1,3 +1,5 @@
+"use client";
+
 import {
   CardHeader,
   CardContent,
@@ -5,25 +7,39 @@ import {
   Card,
 } from "@/components/ui/card";
 import { MapPinIcon } from "@/pages/exploreUniversities";
+import { useRouter } from "next/navigation";
 
-export const UniCard = ({
-  name,
-  rank,
-  location,
-}: {
-  name: string;
-  rank: number;
-  location: string;
-}) => {
+interface UniversityProps {
+  uni_id: number;
+  QS_Rankings: number;
+  Times_Rankings: number;
+  university: string;
+  slug: string;
+  country: string;
+  address: string;
+  uni_fees: {
+    out_of_state_tuition_fee: string;
+    accomodation_expenses: string;
+  };
+  courses_offered: any;
+}
+
+export const UniCard = ({ data }: { data: UniversityProps }) => {
+  const router = useRouter();
   return (
-    <div className="grid gap-4 p-6 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors">
+    <div
+      onClick={() => router.push("/universities/" + data.slug)}
+      className="grid gap-4 p-6 rounded-lg border border-primary/50 shadow-sm hover:cursor-pointer hover:shadow-xl hover:scale-[0.98] transform transition ease-in-out delay-100 hover:shadow-primary/10 bg-slate-50"
+    >
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold">{name}</h3>
-        <span className="font-semibold text-3xl font-semibold">{rank}</span>
+        <h3 className="text-lg font-semibold">{data.university}</h3>
+        <span className="font-semibold text-3xl font-semibold">
+          {data.QS_Rankings}
+        </span>
       </div>
       <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
         <MapPinIcon className="w-4 h-4" />
-        {location}
+        {data.country}
       </div>
     </div>
   );

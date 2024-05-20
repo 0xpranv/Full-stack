@@ -89,7 +89,8 @@ export const Footer = () => {
                 </Link>
                 <Link
                   className="text-gray-400 hover:text-gray-300"
-                  href="https://www.instagram.com/helpstudyabroad.co/ "
+                  href="https://www.instagram.com/helpstudyabroad.co/"
+                  target=""
                 >
                   <InstagramIcon className="h-6 w-6" />
                 </Link>

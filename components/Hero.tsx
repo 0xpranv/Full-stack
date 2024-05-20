@@ -4,7 +4,7 @@ import { Button } from "./button";
 
 export default function Hero() {
   return (
-    <section key="1" className="">
+    <section key="1" className="pb-7">
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-1 ">
         <div className="flex flex-col space-y-4">
           <div className="space-y-2">
@@ -28,8 +28,8 @@ export default function Hero() {
         </div>
         <Image
           src="https://plus.unsplash.com/premium_photo-1683887034146-c79058dbdcb1"
-          className="bg-slate-200 rounded-xl lg:order-first w-full md:w-5/6"
-          height={500}
+          className="bg-slate-200 rounded-xl object-cover lg:order-first w-full md:w-[90%] "
+          height={600}
           width={500}
           alt="students studying"
         />

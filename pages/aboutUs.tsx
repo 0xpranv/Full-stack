@@ -45,7 +45,9 @@ export default function AboutUs() {
                 Our Vision
               </h2>
               <p className="text-gray-500 text-lg md:text-xl text-justify ">
-              To create cutting-edge technology that drives progress, fosters collaboration, and inspires our team to push the boundaries of what″s possible.
+                To create cutting-edge technology that drives progress, fosters
+                collaboration, and inspires our team to push the boundaries of
+                what″s possible.
               </p>
             </div>
             <div>
@@ -83,12 +85,12 @@ export default function AboutUs() {
               imgSrc="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
             />
             <TeamCard
-              name="Pranav Sonawane"
+              name="Rahul Kumaar"
               position="CFO"
               intro="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."
               imgSrc="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
             />
-             <TeamCard
+            <TeamCard
               name="Rahul Kumar"
               position="CEO"
               intro="DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware."

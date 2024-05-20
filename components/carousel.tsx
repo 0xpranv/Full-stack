@@ -137,7 +137,7 @@ const TestimonialCarouselItem = ({
     <CarouselItem className="flex flex-col justify-center items-center p-4 md:basis-1/2 ">
       <div className="flex flex-wrap ">
         <div className="w-full">
-          <div className="h-96 md:h-80 lg:h-72 flex flex-col justify-between bg-gray-100 border border-primary/50 hover:scale-105 hover:shadow-primary/20 transform transition ease-in-out delay-100 p-8 rounded-lg shadow-xl">
+          <div className="h-96 md:h-80 lg:h-72 flex flex-col justify-between bg-gray-100 border border-primary/50 hover:scale-[1.02] hover:shadow-primary/20 transform transition ease-in-out delay-100 p-8 rounded-lg shadow-xl">
             <div className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
