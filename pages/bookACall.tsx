@@ -13,6 +13,7 @@ import {
 
 import { InlineWidget } from "react-calendly";
 import { useState } from "react";
+import { H1 } from "@/components/heading";
 
 export default function BookingPage() {
   const date = new Date().getFullYear();
@@ -28,17 +29,17 @@ export default function BookingPage() {
             src="/placeholder.svg"
           /> */}
           <div className="w-full">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Book a Free 1:1 Call with Experts!
-            </h1>
-            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Get guidance on country, intake, deadlines, tests, eligibility
-              criteria...
-            </p>
+            <H1 className="text-center">Book a Free Call with Our Expert!</H1>
+            <div className="flex flex-col justify-center items-center ">
+              <p className="text-center max-w-[600px] text-gray-500 ">
+                Get guidance on country, intake, deadlines, tests, eligibility
+                criteria...
+              </p>
+            </div>
             {!calenderVisible ? (
-              <div className={`pt-5 `}>
-                <form className="space-y-4">
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div className={`pt-7 flex flex-col justify-center items-center`}>
+                <form className="space-y-4 flex flex-col justify-center">
+                  <div className="flex space-x-7">
                     <div className="space-y-2">
                       <Label htmlFor="name">
                         Degree you&apos;re planning to study
@@ -88,26 +89,49 @@ export default function BookingPage() {
                       </RadioGroup>
                     </div>
                   </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="">
-                      How are you planning your study abroad process?
-                    </Label>
-                    <Select>
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder="select" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="light">
-                          I&apos;m doing it myself
-                        </SelectItem>
-                        <SelectItem value="dark">
-                          Joined another Consultancy
-                        </SelectItem>
-                        <SelectItem value="system">
-                          Need Professional Counselling
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
+                  <div className="flex space-x-7">
+                    <div className="space-y-2">
+                      <Label htmlFor="">
+                        How are you planning your study abroad process?
+                      </Label>
+                      <Select>
+                        <SelectTrigger className="w-full">
+                          <SelectValue placeholder="select" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="light">
+                            I&apos;m doing it myself
+                          </SelectItem>
+                          <SelectItem value="dark">
+                            Joined another Consultancy
+                          </SelectItem>
+                          <SelectItem value="system">
+                            Need Professional Counselling
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="">
+                        How are you planning your study abroad process?
+                      </Label>
+                      <Select>
+                        <SelectTrigger className="w-full">
+                          <SelectValue placeholder="select" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="light">
+                            I&apos;m doing it myself
+                          </SelectItem>
+                          <SelectItem value="dark">
+                            Joined another Consultancy
+                          </SelectItem>
+                          <SelectItem value="system">
+                            Need Professional Counselling
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
                   </div>
                   <Button
                     className="w-full"
@@ -121,14 +145,14 @@ export default function BookingPage() {
               </div>
             ) : (
               <div className="">
-                <Button
+                {/* <Button
                   className="btn"
                   onClick={() => {
                     setCalenderVisible(false);
                   }}
                 >
                   Back
-                </Button>
+                </Button> */}
                 <InlineWidget url="https://calendly.com/pranav-v5qa/free-1-1-consultation" />
               </div>
             )}
@@ -139,10 +163,10 @@ export default function BookingPage() {
         <div className="container px-4 md:px-6 ">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-center md:text-left font-bold text-3xl w-full">
                 What to Expect
               </h2>
-              <p className="mt-4 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="text-gray-500 text-lg md:text-xl text-justify ">
                 During the call, our team will discuss your career goals, go
                 brief over your portfolio to give you pointers, and how our
                 services can help you achieve your goals. We&apos;ll also answer
@@ -151,10 +175,10 @@ export default function BookingPage() {
               </p>
             </div>
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-center md:text-left font-bold text-3xl w-full">
                 Actionable Steps
               </h2>
-              <p className="mt-4 text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="text-gray-500 text-lg md:text-xl text-justify ">
                 The call will be attended by a member of our Expert Counsellor
                 team and a subject matter expert who can provide in-depth
                 insights and recommendations. We believe in a collaborative

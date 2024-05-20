@@ -21,7 +21,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="pt-6 flex flex-col gap-2 min-[400px]:flex-row">
-            <Button>Connect with Expert (Free)</Button>
+            <Button redirectPath="/booking">Connect with Expert (Free)</Button>
 
             <Button variant="secondary">Learn More</Button>
           </div>
