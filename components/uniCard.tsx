@@ -7,6 +7,7 @@ import {
   Card,
 } from "@/components/ui/card";
 import { MapPinIcon } from "@/pages/exploreUniversities";
+import { Label } from "@radix-ui/react-dropdown-menu";
 import { useRouter } from "next/navigation";
 
 interface UniversityProps {
@@ -35,7 +36,7 @@ export const UniCard = ({ data }: { data: UniversityProps }) => {
     >
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-start gap-2 text-sm text-gray-500">
-          <h3 className="text-lg font-semibold text-gray-800">
+          <h3 className="text-lg font-semibold text-primary/90">
             {data.university}
           </h3>
           <div className="flex gap-2 items-center">
@@ -86,27 +87,36 @@ export const UniSectionCard = ({
   elements: UniCardElements[];
 }) => {
   return (
-    <Card className="w-full mt-6">
+    <Card className="w-full h-min mb-6 rounded-xl border-2 border-secondary/70 shadow-xl">
       <CardHeader className="flex items-center justify-between px-6 py-4">
         <div className="flex items-left space-x-4">
-          {/* <RocketIcon className="h-6 w-6 text-gray-500" /> */}
-          <h3 className="text-lg text-left font-semibold">{title}</h3>
+          <RocketIcon className="h-6 w-6 text-gray-500" />
+          <h3 className="text-lg text-left text-gray-500 font-semibold">
+            {title}
+          </h3>
         </div>
       </CardHeader>
       <CardContent>
-        <ul className="space-y-2">
+        <ul className="space-y-2 text-sm">
           {elements.map((element) => (
-            <li
-              key={element.id}
-              className="flex items-center justify-between border border-gray-200 p-4"
-            >
-              <span>{element.title}</span>
-              <ChevronRightIcon className="h-5 w-5 text-gray-500" />
+            <li key={element.id} className="flex items-center">
+              <input
+                id={element.title}
+                type="checkbox"
+                className="w-4 h-4 bg-secondary border-2 border-secondary rounded-lg text-secondary  cursor-pointer"
+                value={element.title}
+              />
+              <label
+                htmlFor={element.title}
+                className="ml-2 text-sm font-medium text-gray-700 cursor-pointer"
+              >
+                {element.title}
+              </label>
             </li>
           ))}
-          <li className="flex flex-col justify-center border border-pink-400 p-4">
+          {/* <li className="flex flex-col justify-center border border-pink-400 p-4">
             <p className="text-center p-0 m-0">More</p>
-          </li>
+          </li> */}
         </ul>
       </CardContent>
     </Card>

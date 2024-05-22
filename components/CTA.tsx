@@ -6,7 +6,7 @@ export const CTA = () => {
       <div className="container px-5 mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-center font-bold text-3xl w-full mx-auto">
-            We follow Seven Steps for your guaranteed Success!
+            We follow Six Steps for your guaranteed Success!
           </h2>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
             Our international team with combined experience of 20+ years will

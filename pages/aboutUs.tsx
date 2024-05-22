@@ -44,7 +44,7 @@ export default function AboutUs() {
               <h2 className="text-center md:text-left font-bold text-3xl w-full">
                 Our Vision
               </h2>
-              <p className="text-gray-500 text-lg md:text-xl text-justify ">
+              <p className="text-gray-500 text-lg  ">
                 To create cutting-edge technology that drives progress, fosters
                 collaboration, and inspires our team to push the boundaries of
                 what″s possible.
@@ -54,7 +54,7 @@ export default function AboutUs() {
               <h2 className="text-center md:text-left font-bold text-3xl w-full">
                 Our Mission
               </h2>
-              <p className="text-gray-500 text-lg md:text-xl text-justify ">
+              <p className="text-gray-500 text-lg">
                 To create cutting-edge technology that drives progress, fosters
                 collaboration, and inspires our team to push the boundaries of
                 what&Prime;s possible.

@@ -4,19 +4,19 @@ import { Button } from "./button";
 
 export default function Hero() {
   return (
-    <section key="1" className="pb-7">
+    <section key="1" className="">
       <div className="container grid gap-8 lg:grid-cols-2 lg:gap-1 ">
         <div className="flex flex-col space-y-4">
-          <div className="space-y-2">
+          <div className="space-y-3">
             <H1>Begin your Study Abroad Journey</H1>
-            <p className="text-lg font-semibold">
+            <p className="text-lg font-semibold pt-4">
               Click below and take your best decision of the day!
             </p>
             <div className="text-slate-700 ">
               What we offer in this call?
               <ul className="list-disc px-6">
-                <li>Get our free Profile Analysis.</li>
-                <li>Get free 30-minute session from our experts.</li>
+                <li>Free Profile Analysis.</li>
+                <li>Free 30-minute session from our experts.</li>
               </ul>
             </div>
           </div>

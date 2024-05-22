@@ -27,8 +27,11 @@ export const Button = ({
     <button
       className={`rounded-lg px-4 py-1.5 font-semibold ${defaultClassName} ${className}`}
       onClick={() => {
-        //@ts-ignore
-        router.push(redirectPath | "/");
+        if (redirectPath) {
+          router.push(redirectPath);
+        } else {
+          router.push("/");
+        }
       }}
     >
       {children}

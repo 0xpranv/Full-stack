@@ -17,7 +17,9 @@ export default function AskOurExperts() {
                 person to help.
               </p>
             </div>
-            <Button variant="secondary">Connect with an Expert</Button>
+            <Button variant="secondary" redirectPath="/booking">
+              Connect with an Expert
+            </Button>
           </div>
         </div>
       </section>

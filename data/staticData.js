@@ -80,12 +80,6 @@ const SevenStepProcessData = [
     description: "Fees and financing",
     iconName: "TicketIcon",
   },
-  {
-    id: 7,
-    title: "Step 7",
-    description: "Visa guidance and mock interview",
-    iconName: "TicketIcon",
-  },
 ];
 
 const testmonialData = [
@@ -308,6 +302,7 @@ const universityData = [{
   type: "Public",
   slug: "massachusetts-institute-of-technology",
   country: "United States",
+  no_of_scholarship: 4,
   address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
   uni_fees: {
     out_of_state_tuition_fee: "$53,790",
@@ -368,6 +363,7 @@ const universityData = [{
   type: "Private",
   slug: "university-of-cambridge",
   country: "United Kingdom",
+  no_of_scholarship: 4,
   address: "The Old Schools, Trinity Lane, Cambridge, Cambridgeshire, CB2 1TN, United Kingdom",
   uni_fees: {
     out_of_state_tuition_fee: "$53,790",
@@ -412,6 +408,7 @@ const universityData = [{
   type: "Private",
   slug: "massachusetts-institute-of-technology",
   country: "Australia",
+  no_of_scholarship: 4,
   address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
   uni_fees: {
     out_of_state_tuition_fee: "$53,790",
@@ -457,6 +454,7 @@ const universityData = [{
   type: "Public",
   slug: "massachusetts-institute-of-technology",
   country: "United States",
+  no_of_scholarship: 4,
   address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
   uni_fees: {
     out_of_state_tuition_fee: "$53,790",
@@ -501,6 +499,7 @@ const universityData = [{
   type: "Private",
   slug: "stanford-university",
   country: "United States",
+  no_of_scholarship: 4,
   address: "77 Massachusetts Avenue, Cambridge, Massachusetts, 02139-4307, United States",
   uni_fees: {
     out_of_state_tuition_fee: "$53,790",

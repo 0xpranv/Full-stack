@@ -25,13 +25,14 @@ export const BlogArticleCard = ({ post }: { post: BlogArticleCardProps }) => {
         style={{ objectFit: "cover" }}
         width={804}
         height={452}
-        className="rounded-md border bg-muted transition-colors"
+        className="rounded-md border bg-muted transition-colors h-48"
       />
       {/* )} */}
-      <h2 className="text-2xl font-extrabold">{post.title}</h2>
+      <h2 className="text-xl font-extrabold">{post.title}</h2>
 
-      <p className="text-muted-foreground">
-        {post.description.slice(0, 100) + "..."}
+      <p className="text-muted-foreground text-sm line-clamp-3">
+        {/* {post.description.slice(0, 100) + "..."} */}
+        {post.description}
       </p>
       <div className="flex flex-row justify-between items-center bottom-0">
         <p className="text-sm text-muted-foreground">{formatDate(post.date)}</p>

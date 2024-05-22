@@ -46,9 +46,18 @@ export const Footer = () => {
             <div className="space-y-4 col-span-2">
               <h4 className="text-lg font-semibold">World Top Universities</h4>
               <nav className="grid gap-2 text-gray-400">
-                <FooterElement title="University of Oxford, UK" />
-                <FooterElement title="Standford University, US" />
-                <FooterElement title="Massachusetts Tech, US" />
+                <FooterElement
+                  title="University of Cambridge, UK"
+                  href="/universities/university-of-cambridge"
+                />
+                <FooterElement
+                  title="Standford University, US"
+                  href="/universities/stanford-university"
+                />
+                <FooterElement
+                  title="Massachusetts Tech, US"
+                  href="/universities/massachusetts-institute-of-technology"
+                />
                 <Link
                   className="hover:underline hover:underline-offset-2"
                   href="/more"
@@ -60,7 +69,7 @@ export const Footer = () => {
             <div className="space-y-4 col-span-2">
               <h4 className="text-lg font-semibold">Popular Destinations</h4>
               <nav className="grid gap-2 text-gray-400">
-                <FooterElement title="United States" />
+                <FooterElement title="United States" href="" />
                 <FooterElement title="United Kingdom" />
                 <FooterElement title="Canada" />
                 <FooterElement title="Australia" />

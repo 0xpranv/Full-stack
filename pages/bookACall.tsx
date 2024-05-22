@@ -31,13 +31,15 @@ export default function BookingPage() {
           <div className="w-full">
             <H1 className="text-center">Book a Free Call with Our Expert!</H1>
             <div className="flex flex-col justify-center items-center ">
-              <p className="text-center max-w-[600px] text-gray-500 ">
+              <p className="text-center text-xl max-w-[600px] text-gray-500 ">
                 Get guidance on country, intake, deadlines, tests, eligibility
                 criteria...
               </p>
             </div>
             {!calenderVisible ? (
-              <div className={`pt-7 flex flex-col justify-center items-center`}>
+              <div
+                className={`pt-12 flex flex-col justify-center items-center`}
+              >
                 <form className="space-y-4 flex flex-col justify-center">
                   <div className="flex space-x-7">
                     <div className="space-y-2">
@@ -134,7 +136,7 @@ export default function BookingPage() {
                     </div>
                   </div>
                   <Button
-                    className="w-full"
+                    className="w-full text-slate-50"
                     onClick={() => {
                       setCalenderVisible(true);
                     }}
@@ -166,7 +168,7 @@ export default function BookingPage() {
               <h2 className="text-center md:text-left font-bold text-3xl w-full">
                 What to Expect
               </h2>
-              <p className="text-gray-500 text-lg md:text-xl text-justify ">
+              <p className="text-gray-600 text-lg  ">
                 During the call, our team will discuss your career goals, go
                 brief over your portfolio to give you pointers, and how our
                 services can help you achieve your goals. We&apos;ll also answer
@@ -178,7 +180,7 @@ export default function BookingPage() {
               <h2 className="text-center md:text-left font-bold text-3xl w-full">
                 Actionable Steps
               </h2>
-              <p className="text-gray-500 text-lg md:text-xl text-justify ">
+              <p className="text-gray-600 text-lg  ">
                 The call will be attended by a member of our Expert Counsellor
                 team and a subject matter expert who can provide in-depth
                 insights and recommendations. We believe in a collaborative
