@@ -126,8 +126,8 @@ export function FullBlog() {
                 </div>
                 <div className="flex flex-col leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl">
                   <p className="text-sm mt-0 font-normal text-gray-900 ">
-                    That's awesome. I think our users will really appreciate the
-                    improvements.
+                    That&apos;s awesome. I think our users will really
+                    appreciate the improvements.
                   </p>
                 </div>
                 {/* <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
@@ -155,8 +155,8 @@ export function FullBlog() {
                 </div>
                 <div className="flex flex-col leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl">
                   <p className="text-sm mt-0 font-normal text-gray-900 ">
-                    That's awesome. I think our users will really appreciate the
-                    improvements.
+                    That&apos;s awesome. I think our users will really
+                    appreciate the improvements.
                   </p>
                 </div>
                 {/* <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
